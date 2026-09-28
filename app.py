@@ -11,7 +11,7 @@ state = {"participants":[],"current":-1,"finished":False,"phase":"idle","started
 def tick():
     now=time.time()
     if state["phase"]=="prep" and now-state["started"]>=PREP:
-        state["phase"]="play"; state["started"]=now; state["letter"]=random.choice(string.ascii_uppercase)
+        state["phase"]="play"; state["started"]=now; state["letter"]=random.choice(string.ascii_uppercase.replace("O",""))
     elif state["phase"]=="play" and now-state["started"]>=ROUND:
         state["phase"]="timeup"; state["letter"]=None
 
