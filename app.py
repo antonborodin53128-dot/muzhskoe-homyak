@@ -69,7 +69,7 @@ SCREEN = """
 .letter{font-size:clamp(190px,30vw,480px);font-weight:900;color:#20ee78;text-align:center;line-height:.85}.prep{font-size:clamp(150px,24vw,380px);font-weight:900;color:#ffffff;text-align:center}.timeup{font-size:clamp(65px,10vw,150px);font-weight:900;text-align:center}
 .info{display:flex;gap:50px;margin-top:28px}.label{color:#84968c;font-size:13px;font-weight:900;letter-spacing:2px}.num{font-size:70px;font-weight:900;color:#20ee78}.results{border-top:1px solid #174b30;padding-top:16px}.resultList{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}.result{border:1px solid #1c5638;border-radius:13px;padding:10px 15px}.result b{color:#20ee78;margin-left:10px}.wrong{animation:bad .18s 2}@keyframes bad{50%{color:#ff5b68;transform:scale(.94)}}
 </style></head><body><div class="wrap"><div class="top"><div class="brand"><span class="m">ХОМЯК</span></div><b class="accent">ХОМЯК</b></div>
-<div class="stage"><div><div class="status" id="status">ОЖИДАНИЕ</div><div class="name" id="name">ХОМЯК</div><div class="info"><div><div class="label">ВРЕМЯ</div><div class="num" id="timer">30</div></div><div><div class="label">РЕЗУЛЬТАТ</div><div class="num" id="score">0</div></div></div></div><div id="center" class="letter">—</div></div>
+<div class="stage"><div><div class="status" id="status">ОЖИДАНИЕ</div><div class="info"><div><div class="label">ВРЕМЯ</div><div class="num" id="timer">30</div></div><div><div class="label">РЕЗУЛЬТАТ</div><div class="num" id="score">0</div></div></div></div><div id="center" class="letter">—</div></div>
 <div class="results"><div class="label">РЕЗУЛЬТАТЫ</div><div class="resultList" id="results"></div></div></div>
 <script>
 const $=x=>document.getElementById(x);let wrong=-1;
