@@ -40,7 +40,7 @@ button{border:0;border-radius:14px;padding:15px 22px;font-size:16px;font-weight:
 .nextZone{margin-top:34px;padding-top:20px;border-top:1px solid #174b30;display:flex;justify-content:flex-end}.next{min-width:270px}
 .doneRow{display:flex;justify-content:space-between;border-bottom:1px solid #10281b;padding:10px 4px}.doneRow b{color:#20ee78}.hint{color:#82958a;font-size:13px;margin-top:13px}
 </style></head><body><div class="wrap">
-<div class="top"><div class="brand"><span class="m">МУЖСКОЕ</span> <span class="slash">/</span> <span class="w">ЖЕНСКОЕ</span></div><b class="accent">ХОМЯК · УПРАВЛЕНИЕ</b></div>
+<div class="top"><div class="brand"><span class="m">ХОМЯК</span></div><b class="accent">ХОМЯК · УПРАВЛЕНИЕ</b></div>
 <div class="panel"><div class="row"><div><div class="label">КОЛИЧЕСТВО УЧАСТНИКОВ</div><input id="count" type="number" min="1" max="30" value="4"></div>
 <button class="green" id="new">НАЧАТЬ КОНКУРС</button><button class="red" id="reset">СБРОСИТЬ</button></div>
 <div class="hint">Зрительский экран: <a href="/screen" target="_blank" style="color:#20ee78">открыть /screen</a> · A–Z работают на обеих страницах.</div></div>
@@ -68,7 +68,7 @@ SCREEN = """
 .stage{min-height:560px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px}.name{font-size:clamp(42px,5vw,82px);font-weight:900}.status{color:#84968c;font-size:20px;font-weight:900;letter-spacing:4px;margin-bottom:18px}
 .letter{font-size:clamp(190px,30vw,480px);font-weight:900;color:#20ee78;text-align:center;line-height:.85}.prep{font-size:clamp(150px,24vw,380px);font-weight:900;color:#ffffff;text-align:center}.timeup{font-size:clamp(65px,10vw,150px);font-weight:900;text-align:center}
 .info{display:flex;gap:50px;margin-top:28px}.label{color:#84968c;font-size:13px;font-weight:900;letter-spacing:2px}.num{font-size:70px;font-weight:900;color:#20ee78}.results{border-top:1px solid #174b30;padding-top:16px}.resultList{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}.result{border:1px solid #1c5638;border-radius:13px;padding:10px 15px}.result b{color:#20ee78;margin-left:10px}.wrong{animation:bad .18s 2}@keyframes bad{50%{color:#ff5b68;transform:scale(.94)}}
-</style></head><body><div class="wrap"><div class="top"><div class="brand"><span class="m">МУЖСКОЕ</span> <span class="slash">/</span> <span class="w">ЖЕНСКОЕ</span></div><b class="accent">ХОМЯК</b></div>
+</style></head><body><div class="wrap"><div class="top"><div class="brand"><span class="m">ХОМЯК</span></div><b class="accent">ХОМЯК</b></div>
 <div class="stage"><div><div class="status" id="status">ОЖИДАНИЕ</div><div class="name" id="name">ХОМЯК</div><div class="info"><div><div class="label">ВРЕМЯ</div><div class="num" id="timer">30</div></div><div><div class="label">РЕЗУЛЬТАТ</div><div class="num" id="score">0</div></div></div></div><div id="center" class="letter">—</div></div>
 <div class="results"><div class="label">РЕЗУЛЬТАТЫ</div><div class="resultList" id="results"></div></div></div>
 <script>
